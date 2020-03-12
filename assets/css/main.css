@@ -1798,7 +1798,7 @@ ul.icons {
   -ms-flex-align: center;
   -ms-flex-pack: center;
   background-color: #111111;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.9);
   -moz-align-items: center;
   -webkit-align-items: center;
   -ms-align-items: center;
@@ -2343,7 +2343,7 @@ ul.icons {
     color: rgba(255, 255, 255, 0.5);
     text-decoration: none; }
     #footer a:hover {
-      color: #ce1b28; }
+      color: #0ABFBC; }
   #footer .content {
     display: -moz-flex;
     display: -webkit-flex;
