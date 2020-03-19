@@ -7,87 +7,152 @@
 <html>
 
 <head>
-	<title>PAYBOOM</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="icon" type="image/png" href="images/flavicon.png">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<meta name="google-site-verification" content="z48ToynEl0K46MKiCW2M6bCkTtsG1cYD9GtFpRckdh0" />
+    <title>PAYBOOM</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="icon" type="image/png" href="images/flavicon.png">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="google-site-verification" content="z48ToynEl0K46MKiCW2M6bCkTtsG1cYD9GtFpRckdh0" />
+    <style>
+        .colorpb {
+            font-weight: bold;
+            color: #29221F;
+        }
+    </style>
+    <!-- Remember to include jQuery :) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHQSEPRS6F"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 
-	gtag('config', 'G-PHQSEPRS6F');
-	</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PHQSEPRS6F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PHQSEPRS6F');
+    </script>
 </head>
 
 <body class="is-preload">
 
-	<!-- Header -->
-	<header id="header">
-		<a class="logo" href="index.html"><img src="images/logo.png" height="28%"> PAYBOOM</a>
-		<nav>
-			<a href="#menu">Menu</a>
-		</nav>
-	</header>
+    <!-- Header -->
+    <header id="header">
+        <a class="logo" href="index.html"><img src="images/logo.png" height="28%"> PAYBOOM</a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
 
-	<!-- Nav -->
-	<nav id="menu">
-		<ul class="links">
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="contact.html">Contactanos</a></li>
-			<li><a href="cotiza.html">Cotización Virtual</a></li>
-		</ul>
-	</nav>
+    <!-- Nav -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="contact.html">Contactanos</a></li>
+            <li><a href="cotiza.html">Cotización Virtual</a></li>
+        </ul>
+    </nav>
 
-	<!-- Heading -->
-	<div id="heading">
-		<h1>COTIZACIÓN - SISTEMA CASHLESS</h1>
-	</div>
+    <!-- Heading -->
+    <div id="heading">
+        <h1>Beneficios logrados con Payboom - CASHLESS</h1>
+    </div>
 
-	<!-- Main -->
-	<section id="main" class="wrapper">
-		<div class="inner">
-			<div class="content">
-				<header>
-					<h2>Realiza una demo con nosotros</h2>
-				</header>
+    <!-- Main -->
+    <section id="main" class="wrapper">
+        <div class="inner">
+            <div class="content">
+                <header>
+                    <h2>PAYBOOM - BENEFICIOS CASHLESS </h2>
+                    <span style="color: #13747D;">Por favor llena los campos, para mostrarte datos de tu interés.</span>
+                </header>
 
-				<form method="post" action="#">
-					<div class="row gtr-uniform">
-						<div class="col-6 col-12-xsmall">
-							<input type="text" name="name" id="name" value="" placeholder="Nombre Completo" />
-						</div>
-						<div class="col-6 col-12-xsmall">
-							<input type="email" name="email" id="email" value="" placeholder="Correo electrónico" />
-						</div>
-						<!-- Break -->
-						<!-- Break -->
-						<div class="col-12">
-							<textarea name="textarea" id="textarea" placeholder="Cuéntanos más sobre tu proyecto"
-								rows="6"></textarea>
-						</div>
-						<!-- Break -->
-						<div class="col-12">
-							<ul class="actions">
-								<li><input type="submit" value="Enviar" class="primary" /></li>
-								<li><input type="reset" value="Limpiar" /></li>
-							</ul>
-						</div>
-					</div>
-				</form>
-			</div>
-		</div>
-	</section>
+                <form method="" action="#">
+                    <div class="row gtr-uniform">
 
-	 <!-- Footer -->
-     <footer id="footer">
+                        <div class="col-6 col-12-xsmall">
+                            <label>Nombre de tú evento</label>
+                            <input type="text" id="name" value="" placeholder="Nombre de tu Evento" required />
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label>¿Cuántos días dura tu evento?</label>
+                            <input type="number" id="days" value="" placeholder="Número de días que dura el evento"
+                                required />
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label>¿Cuántas personas se esperan recibir por día?</label>
+                            <input type="number" id="people" value="" placeholder="Número de personas" required />
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label>¿Cúal es el ticket promedio por persona?</label>
+                            <input type="number" id="ticket" value="" placeholder="$" required />
+                        </div>
+                        <!-- Break -->
+                        <div class="col-12">
+                            <ul class="actions">
+                                <li><input type="button" value="Obtener Beneficios" class="primary" onclick="mostrar()"/></li>
+                                <li><input type="reset" value="Limpiar" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="ex1" class="modal">
+            <h3 id="evento"></h3>
+            <div class="table-wrapper">
+                <table class="alt">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Sin Payboom</th>
+                            <th>Con Payboom</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ticket prom</td>
+                            <td id="tkprom"></td>
+                            <td class="colorpb" id="tkprompayboom"></td>
+                        </tr>
+                        <tr>
+                            <td>Dinero sin reclamo.</td>
+                            <td>n/a.</td>
+                            <td class="colorpb" id="outcash"></td>
+                        </tr>
+                        <tr>
+                            <td>Ventas mínimas + dinero sin reclamo (x día)</td>
+                            <td id="unday"></td>
+                            <td class="colorpb" id="inday"></td>
+                        </tr>
+                        <tr>
+                            <td>Ventas totales</td>
+                            <td id="vtssinpayoom">.</td>
+                            <td class="colorpb" id="vtsconpayboom"></td>
+                        </tr>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2" style="font-weight: bold; color: #13747D;" id="total"></td>
+                        </tr>
+                    </tfoot>
+                    </tbody>
+                </table>
+            </div>
+            <a href="#" rel="modal:close">Cerrar</a>
+        </div>
+
+
+    </section>
+   <a href="#ex1" rel="modal:open" id="aver"></a>
+    <!-- Footer -->
+    <footer id="footer">
         <div class="inner">
             <div class="content">
                 <section>
@@ -99,16 +164,22 @@
                 <section>
                     <h4>ARTICULOS RELACIONADOS</h4>
                     <ul class="alt">
-                        <li><a target="_blank" href="https://www.informabtl.com/que-es-el-cashless-y-por-que-es-el-metodo-de-pago-favorito-en-los-eventos/">¿Por qué es el pago favorito de los eventos?.</a></li>
-                        <li><a target="_blank" href="https://www.codigonexo.com/blog/nfc/usos-de-nfc/ventajas-de-usar-sistema-de-pago-cashless-nfc/">Ventajas de usar el sistema Cashless.</a></li>
-                        <li><a target="_blank" href="https://www.idasfest.es/blog/razones-cashless-payment-eventos">5 Razones para utilizar cashless.</a></li>
+                        <li><a target="_blank"
+                                href="https://www.informabtl.com/que-es-el-cashless-y-por-que-es-el-metodo-de-pago-favorito-en-los-eventos/">¿Por
+                                qué es el pago favorito de los eventos?.</a></li>
+                        <li><a target="_blank"
+                                href="https://www.codigonexo.com/blog/nfc/usos-de-nfc/ventajas-de-usar-sistema-de-pago-cashless-nfc/">Ventajas
+                                de usar el sistema Cashless.</a></li>
+                        <li><a target="_blank" href="https://www.idasfest.es/blog/razones-cashless-payment-eventos">5
+                                Razones para utilizar cashless.</a></li>
                     </ul>
                 </section>
                 <section>
                     <h4>Redes Sociales</h4>
                     <ul class="plain">
 
-                        <li><a target="_blank" href="https://www.facebook.com/payboomx"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/payboomx"><i
+                                    class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
                         <!--
                         <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
                         <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
@@ -123,12 +194,60 @@
         </div>
     </footer>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script>
+
+
+
+        function mostrar() {
+
+            var evento = document.getElementById('name').value;
+            var personas = document.getElementById('people').value;
+            var ticketprom = document.getElementById('ticket').value;
+            var diasdeevento = document.getElementById('days').value;
+
+            if (personas == '') {
+                alert('llena los campos faltantes');
+                $("#people").focus();
+            } else if (ticketprom == '') {
+                alert('llena los campos faltantes');
+                $("#ticket").focus();
+            } else if (diasdeevento == '') {
+                alert('llena los campos faltantes');
+                $("#days").focus();
+            }else {
+                
+                var ticketpercent = ticketprom * 0.30;
+                var tk = parseInt(ticketprom) + ticketpercent;
+                var percentsinreclamo = tk * 0.05;
+                var totalsinreclamo = personas * percentsinreclamo;
+                var ventastotalessincashless = personas * diasdeevento * ticketprom;
+                var ventastotalesconcashless = personas * tk + totalsinreclamo;
+                var payboom = ventastotalesconcashless * diasdeevento;
+                var ganancia = payboom - ventastotalessincashless;
+
+
+                document.getElementById('evento').innerHTML = evento;
+                document.getElementById('tkprom').innerHTML = '$' + ticketprom;
+                document.getElementById('tkprompayboom').innerHTML = '$' + tk;
+                document.getElementById('outcash').innerHTML = '$' + totalsinreclamo;
+                document.getElementById('unday').innerHTML = '$' + personas * ticketprom;
+                document.getElementById('inday').innerHTML = '$' + ventastotalesconcashless;
+                document.getElementById('vtssinpayoom').innerHTML = '$' + ventastotalessincashless;
+                document.getElementById('vtsconpayboom').innerHTML = '$' + payboom;
+                document.getElementById('total').innerHTML = 'Tu ganancia es de: $' + ganancia;
+
+                	
+                document.getElementById("aver").click();
+            }
+        }
+
+    </script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
