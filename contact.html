@@ -14,11 +14,11 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-PHQSEPRS6F"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-	gtag('config', 'G-PHQSEPRS6F');
+		gtag('config', 'G-PHQSEPRS6F');
 	</script>
 </head>
 
@@ -57,19 +57,20 @@
 				<form method="post" action="#" id="myform">
 					<div class="row gtr-uniform">
 						<div class="col-6 col-12-xsmall">
-							<input type="text" name="from_name"   placeholder="Nombre Completo" required/>
+							<input type="text" name="from_name" id="1"placeholder="Nombre Completo" required />
 						</div>
 						<div class="col-6 col-12-xsmall">
-							<input type="email" name="reply_to"   placeholder="Correo electrónico" required />
+							<input type="email" name="reply_to" id="2" placeholder="Correo electrónico" required />
 						</div>
 						<div class="col-6 col-12-xsmall">
-							<input type="number" name="to_name"  placeholder="Número telefónico" required />
+							<input type="number" name="to_name" id="3" placeholder="Número telefónico" required />
 						</div>
 						<!-- Break -->
 						<!-- Break -->
 						<div class="col-12">
-							<textarea name="message_html"  placeholder="Para ofrecerte un mejor servicio, Cuéntanos brevemente sobre tu proyecto, Día del evento, cuántas personas asistírán, el ticket promedio, la locación y los días que dura el evento, Gracias." required
-								rows="6"></textarea>
+							<textarea name="message_html" id="4"
+								placeholder="Para ofrecerte un mejor servicio, Cuéntanos brevemente sobre tu proyecto, Día del evento, cuántas personas asistírán, el ticket promedio, la locación y los días que dura el evento, Gracias."
+								required rows="6"></textarea>
 						</div>
 						<!-- Break -->
 						<div class="col-12">
@@ -84,51 +85,57 @@
 		</div>
 	</section>
 
-	 <!-- Footer -->
-	 <footer id="footer">
-        <div class="inner">
-            <div class="content">
-                <section>
-                    <h3>INFORMACIÓN DE CONTACTO</h3>
-                    <p>Golfo de California 58, Colonia Tacuba, Alcaldia Miguel Hidalgo. C.P 11410</p>
-                    <p>Teléfono: 56-1501-6936</p>
-                    <p>Email: cashlessmex@gmail.com</p>
-                </section>
-                <section>
-                    <h4>ARTICULOS RELACIONADOS</h4>
-                    <ul class="alt">
-                        <li><a target="_blank" href="https://www.informabtl.com/que-es-el-cashless-y-por-que-es-el-metodo-de-pago-favorito-en-los-eventos/">¿Por qué es el pago favorito de los eventos?.</a></li>
-                        <li><a target="_blank" href="https://www.codigonexo.com/blog/nfc/usos-de-nfc/ventajas-de-usar-sistema-de-pago-cashless-nfc/">Ventajas de usar el sistema Cashless.</a></li>
-                        <li><a target="_blank" href="https://www.idasfest.es/blog/razones-cashless-payment-eventos">5 Razones para utilizar cashless.</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h4>Redes Sociales</h4>
-                    <ul class="plain">
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<div class="content">
+				<section>
+					<h3>INFORMACIÓN DE CONTACTO</h3>
+					<p>Golfo de California 58, Colonia Tacuba, Alcaldia Miguel Hidalgo. C.P 11410</p>
+					<p>Teléfono: 56-1501-6936</p>
+					<p>Email: cashlessmex@gmail.com</p>
+				</section>
+				<section>
+					<h4>ARTICULOS RELACIONADOS</h4>
+					<ul class="alt">
+						<li><a target="_blank"
+								href="https://www.informabtl.com/que-es-el-cashless-y-por-que-es-el-metodo-de-pago-favorito-en-los-eventos/">¿Por
+								qué es el pago favorito de los eventos?.</a></li>
+						<li><a target="_blank"
+								href="https://www.codigonexo.com/blog/nfc/usos-de-nfc/ventajas-de-usar-sistema-de-pago-cashless-nfc/">Ventajas
+								de usar el sistema Cashless.</a></li>
+						<li><a target="_blank" href="https://www.idasfest.es/blog/razones-cashless-payment-eventos">5
+								Razones para utilizar cashless.</a></li>
+					</ul>
+				</section>
+				<section>
+					<h4>Redes Sociales</h4>
+					<ul class="plain">
 
-                        <li><a target="_blank" href="https://www.facebook.com/payboomx"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-                        <!--
+						<li><a target="_blank" href="https://www.facebook.com/payboomx"><i
+									class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
+						<!--
                         <li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
                         <li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
                         <li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
                         -->
-                    </ul>
-                </section>
-            </div>
-            <div class="copyright">
-                &copy; Payboom. 2020 Ciudad de México.
-            </div>
-        </div>
-    </footer>
+					</ul>
+				</section>
+			</div>
+			<div class="copyright">
+				&copy; Payboom. 2020 Ciudad de México.
+			</div>
+		</div>
+	</footer>
 
 	<!-- Scripts -->
 
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
 	<script type="text/javascript">
-	(function(){
-		emailjs.init("user_K7uRYA51OVmcCAkEXgVEW");
-	})();
+		(function () {
+			emailjs.init("user_K7uRYA51OVmcCAkEXgVEW");
+		})();
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
@@ -137,23 +144,27 @@
 	<script src="assets/js/main.js"></script>
 	<script>
 		var myform = $("form#myform");
-		myform.submit(function(event){
+		myform.submit(function (event) {
 			event.preventDefault();
 
-		// Change to your service ID, or keep using the default service
-		var service_id = "default_service";
-		var template_id = "template_eluGX3dj";
+			// Change to your service ID, or keep using the default service
+			var service_id = "default_service";
+			var template_id = "template_eluGX3dj";
 
-		myform.find("button").text("Enviando...");
-		emailjs.sendForm(service_id,template_id,myform[0])
-			.then(function(){ 
-				alert("Muchas Gracias por contactar con nosotros! ,en breve, uno de nuestros agentes, se pondrá en contacto contigo para revisar los detalles de tu evento!");
-			myform.find("button").text("Send");
-			}, function(err) {
-			alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-			myform.find("button").text("Send");
-			});
-		return false;
+			myform.find("button").text("Enviando...");
+			emailjs.sendForm(service_id, template_id, myform[0])
+				.then(function () {
+					alert("Muchas Gracias por contactar con nosotros! ,en breve, uno de nuestros agentes, se pondrá en contacto contigo para revisar los detalles de tu evento!");
+					document.getElementById('1').value = '';
+					document.getElementById('2').value = '';
+					document.getElementById('3').value = '';
+					document.getElementById('4').value = '';
+					myform.find("button").text("Send");
+				}, function (err) {
+					alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+					myform.find("button").text("Send");
+				});
+			return false;
 		});
 	</script>
 </body>
