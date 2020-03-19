@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Industrious by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
--->
 <html>
 
 <head>
@@ -42,7 +37,7 @@
 		<ul class="links">
 			<li><a href="index.html">Inicio</a></li>
 			<li><a href="contact.html">Contactanos</a></li>
-			<li><a href="cotiza.html">Cotización Virtual</a></li>
+			<li><a href="cotiza.html">Beneficios</a></li>
 		</ul>
 	</nav>
 
@@ -59,18 +54,21 @@
 					<h2>Realiza una demo con nosotros</h2>
 				</header>
 
-				<form method="post" action="#">
+				<form method="post" action="#" id="myform">
 					<div class="row gtr-uniform">
 						<div class="col-6 col-12-xsmall">
-							<input type="text" name="name" id="name" value="" placeholder="Nombre Completo" />
+							<input type="text" name="from_name"   placeholder="Nombre Completo" required/>
 						</div>
 						<div class="col-6 col-12-xsmall">
-							<input type="email" name="email" id="email" value="" placeholder="Correo electrónico" />
+							<input type="email" name="reply_to"   placeholder="Correo electrónico" required />
+						</div>
+						<div class="col-6 col-12-xsmall">
+							<input type="number" name="to_name"  placeholder="Número telefónico" required />
 						</div>
 						<!-- Break -->
 						<!-- Break -->
 						<div class="col-12">
-							<textarea name="textarea" id="textarea" placeholder="Cuéntanos más sobre tu proyecto"
+							<textarea name="message_html"  placeholder="Para ofrecerte un mejor servicio, Cuéntanos brevemente sobre tu proyecto, Día del evento, cuántas personas asistírán, el ticket promedio, la locación y los días que dura el evento, Gracias." required
 								rows="6"></textarea>
 						</div>
 						<!-- Break -->
@@ -124,12 +122,40 @@
     </footer>
 
 	<!-- Scripts -->
+
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+	<script type="text/javascript">
+	(function(){
+		emailjs.init("user_K7uRYA51OVmcCAkEXgVEW");
+	})();
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		var myform = $("form#myform");
+		myform.submit(function(event){
+			event.preventDefault();
 
+		// Change to your service ID, or keep using the default service
+		var service_id = "default_service";
+		var template_id = "template_eluGX3dj";
+
+		myform.find("button").text("Enviando...");
+		emailjs.sendForm(service_id,template_id,myform[0])
+			.then(function(){ 
+				alert("Muchas Gracias por contactar con nosotros! ,en breve, uno de nuestros agentes, se pondrá en contacto contigo para revisar los detalles de tu evento!");
+			myform.find("button").text("Send");
+			}, function(err) {
+			alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+			myform.find("button").text("Send");
+			});
+		return false;
+		});
+	</script>
 </body>
 
 </html>

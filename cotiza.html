@@ -54,7 +54,7 @@
         <ul class="links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="contact.html">Contactanos</a></li>
-            <li><a href="cotiza.html">Cotización Virtual</a></li>
+            <li><a href="cotiza.html">Beneficios</a></li>
         </ul>
     </nav>
 
@@ -95,7 +95,7 @@
                         <!-- Break -->
                         <div class="col-12">
                             <ul class="actions">
-                                <li><input type="button" value="Obtener Beneficios" class="primary" onclick="mostrar()"/></li>
+                                <li><input type="button" value="Mostrar Beneficios" class="primary" onclick="mostrar()"/></li>
                                 <li><input type="reset" value="Limpiar" /></li>
                             </ul>
                         </div>
@@ -206,15 +206,15 @@
             var ticketprom = document.getElementById('ticket').value;
             var diasdeevento = document.getElementById('days').value;
 
-            if (personas == '') {
+            if (diasdeevento == '') {
+                alert('llena los campos faltantes');
+                $("#days").focus();
+            } else if (personas == '') {
                 alert('llena los campos faltantes');
                 $("#people").focus();
             } else if (ticketprom == '') {
                 alert('llena los campos faltantes');
                 $("#ticket").focus();
-            } else if (diasdeevento == '') {
-                alert('llena los campos faltantes');
-                $("#days").focus();
             }else {
                 
                 var ticketpercent = ticketprom * 0.30;
